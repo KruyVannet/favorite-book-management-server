@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/book/list/:limit/:next",
+      "handler": "book.getBookListController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/book/getById/:id",
+      "handler": "book.getBookByIdController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/book/public/list/:limit/:next",
+      "handler": "book.getPublicBookController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/book/create",
+      "handler": "book.createBookController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/book/update/:id",
+      "handler": "book.updateBookController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/book/updateStatus/:id",
+      "handler": "book.updateBookStatusController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/book/delete/:id",
+      "handler": "book.deleteBookController",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

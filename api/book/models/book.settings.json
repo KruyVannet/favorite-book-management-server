@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "name": "Book",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isnb": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "cost": {
+      "required": true,
+      "type": "float"
+    },
+    "authorId": {
+      "type": "string"
+    },
+    "publishDate": {
+      "type": "datetime"
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/register/email/password",
+      "handler": "auth.registerUserController",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/login/email/password",
+      "handler": "auth.loginWithEmailController",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
